@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io(import.meta.env.VITE_SOCKET_URL || "http://localhost:5000", {
+const socket = io("https://my-project-backend-5w3s.onrender.com", {
   autoConnect: false,
   transports: ["websocket"],
 });
