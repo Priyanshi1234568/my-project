@@ -8,14 +8,13 @@ const connectDB = require('./config/db');
 const { errorHandler, notFound } = require('./middleware/errorMiddleware');
 const { generalLimiter, authLimiter } = require('./middleware/rateLimitMiddleware');
 
-const authRoutes     = require('./routes/authRoutes');
-const faqRoutes      = require('./routes/faqRoutes');
-const chatRoutes     = require('./routes/chatRoutes');
-const scraperRoutes  = require('./routes/scraperRoutes');
-const passwordRoutes = require('./routes/passwordRoutes');
-const agentRoutes    = require('./routes/agentRoutes');
-const adminRoutes    = require('./routes/adminRoutes');
-
+const authRoutes     = require('./Routes/authRoutes');
+const faqRoutes      = require('./Routes/faqRoutes');
+const chatRoutes     = require('./Routes/chatRoutes');
+const scraperRoutes  = require('./Routes/scraperRoutes');
+const passwordRoutes = require('./Routes/passwordRoutes');
+const agentRoutes    = require('./Routes/agentRoutes');
+const adminRoutes    = require('./Routes/adminRoutes');
 const { initSocket } = require('./socket/chatSocket');
 
 dotenv.config();
