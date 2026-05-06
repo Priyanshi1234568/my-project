@@ -29,9 +29,8 @@ export default function Login() {
 
       login(res.data, form.role);
 
-      if (form.role === "admin") navigate("/admin");
-      else if (form.role === "agent") navigate("/agent");
-      else navigate("/chat");
+      if (form.role === "agent") navigate("/agent", { replace: true });
+else navigate("/chat", { replace: true });
 
     } catch (err) {
       console.log(err.response?.data);
@@ -68,7 +67,7 @@ export default function Login() {
             </label>
 
             <div className="flex gap-2">
-              {["user", "admin", "agent"].map((r) => (
+              {["user", "agent"].map((r) => (
                 <button
                   key={r}
                   type="button"
