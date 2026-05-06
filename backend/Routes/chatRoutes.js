@@ -6,7 +6,7 @@ const {
   assignAgent,
   getPendingChats,
   closeConversation
-} = require('../controllers/chatController');
+} = require('../Controllers/chatController');
 const { protect }    = require('../middleware/authMiddleware');
 const { chatLimiter } = require('../middleware/rateLimitMiddleware');
 const { validate, chatRules } = require('../middleware/validationMiddleware');

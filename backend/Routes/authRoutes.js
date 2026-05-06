@@ -5,7 +5,7 @@ const {
   registerUser, loginUser,
   registerAdmin, loginAdmin,
   registerAgent, loginAgent
-} = require('../controllers/authController');
+} = require('../Controllers/authController');
 
 const { validate, registerRules, loginRules } = require('../middleware/validationMiddleware');
 

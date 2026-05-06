@@ -1,6 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-const { scrapeWebsite, getScrapedContent, deleteContent } = require('../controllers/scraperController');
+const { scrapeWebsite, getScrapedContent, deleteContent } = require('../Controllers/scraperController');
 const { protect } = require('../middleware/authMiddleware');
 
 // Admin only

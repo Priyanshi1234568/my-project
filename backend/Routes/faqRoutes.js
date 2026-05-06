@@ -3,7 +3,7 @@ const router  = express.Router();
 const {
   getAllFAQs, getFAQById,
   createFAQ, updateFAQ, deleteFAQ
-} = require('../controllers/faqController');
+} = require('../Controllers/faqController');
 const { protect }  = require('../middleware/authMiddleware');
 const { validate, faqRules } = require('../middleware/validationMiddleware');
 

@@ -12,7 +12,7 @@ const {
   createAgent,
   deleteUser,
   deleteAgent
-} = require('../controllers/adminController');
+} = require('../Controllers/adminController');
 
 router.get('/stats', protect(['admin']), getStats);
 
